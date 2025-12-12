@@ -1,0 +1,60 @@
+.scenarios {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.scenarios h3 {
+  font-size: 20px;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.scenarios ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scenarios li {
+  color: var(--color-text-secondary);
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+}
+
+.scenarios li::before {
+  content: "✓";
+  color: var(--color-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contactMethod {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-bg);
+  border-radius: var(--border-radius);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.contactMethod:hover {
+  background-color: var(--color-accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}

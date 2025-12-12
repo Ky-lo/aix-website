@@ -1,0 +1,16 @@
+.form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.privacy {
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-bottom: var(--spacing-lg);
+}
+
+.submitWrapper {
+  display: flex;
+  justify-content: center;
+}

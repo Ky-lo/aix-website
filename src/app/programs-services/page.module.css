@@ -1,0 +1,135 @@
+.keyPoints {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.keyPoints ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.keyPoints li {
+  color: var(--color-text-secondary);
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+}
+
+.keyPoints li::before {
+  content: "✓";
+  color: var(--color-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pillarsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pillarDetail {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.description {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .detailGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.detailGrid h4 {
+  font-size: 18px;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.detailGrid ul {
+  list-style-position: outside;
+  color: var(--color-text-secondary);
+  margin-left: var(--spacing-md);
+}
+
+.detailGrid li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.advisoryContent {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.advisoryContent p {
+  margin-bottom: var(--spacing-md);
+}
+
+.tailoringContent {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.tailoringContent p {
+  margin-bottom: var(--spacing-md);
+}
+
+.tailoringContent h4 {
+  color: var(--color-text-primary);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.tailoringContent ul {
+  list-style-position: outside;
+  margin-left: var(--spacing-md);
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaContent p {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.ctaButton {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,116 @@
+.header {
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.logo:hover {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.desktopNav {
+  display: none;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+  }
+}
+
+.navLink {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: var(--spacing-xs) 0;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.navLink.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.mobileMenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-text-primary);
+  padding: var(--spacing-xs);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .mobileMenuButton {
+    display: none;
+  }
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-md);
+  gap: var(--spacing-sm);
+}
+
+@media (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.mobileNavLink {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: var(--spacing-sm);
+  border-left: 3px solid transparent;
+  transition: all var(--transition);
+}
+
+.mobileNavLink:hover {
+  color: var(--color-accent);
+  border-left-color: var(--color-accent);
+  background-color: var(--color-bg);
+  opacity: 1;
+}
+
+.mobileNavLink.active {
+  color: var(--color-accent);
+  border-left-color: var(--color-accent);
+  background-color: var(--color-bg);
+}
