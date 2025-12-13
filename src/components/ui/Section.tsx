@@ -4,6 +4,7 @@ import styles from './Section.module.css';
 export default function Section({
   id,
   eyebrow,
+  eyebrowIcon,
   title,
   intro,
   background = 'default',
@@ -18,7 +19,12 @@ export default function Section({
       <div className={styles.container}>
         {(eyebrow || title || intro) && (
           <div className={styles.header}>
-            {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
+            {eyebrow && (
+              <div className={styles.eyebrowBadge}>
+                {eyebrowIcon && <span className={styles.eyebrowIcon}>{eyebrowIcon}</span>}
+                <span className={styles.eyebrow}>{eyebrow}</span>
+              </div>
+            )}
             {title && <h2 className={styles.title}>{title}</h2>}
             {intro && <p className={styles.intro}>{intro}</p>}
           </div>

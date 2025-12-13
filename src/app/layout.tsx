@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +9,14 @@ import { SITE_CONFIG } from "@/lib/constants";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: '--font-inter',
+});
+
+const instrumentSerif = Instrument_Serif({
+  weight: ['400'],
+  subsets: ["latin"],
+  display: "swap",
+  variable: '--font-display',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +33,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${instrumentSerif.variable}`}>
         {GA_MEASUREMENT_ID && <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />}
         <Header />
         <main>{children}</main>

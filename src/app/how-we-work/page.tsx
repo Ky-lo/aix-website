@@ -1,6 +1,7 @@
 import Section from '@/components/ui/Section';
 import ProcessStep from '@/components/ui/ProcessStep';
 import Button from '@/components/ui/Button';
+import { Workflow, Users2, Package, BarChart3 } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 import styles from './page.module.css';
 
@@ -14,12 +15,20 @@ export default function HowWeWorkPage() {
     <div>
       <Section
         id="how-intro"
+        eyebrow="OUR METHODOLOGY"
+        eyebrowIcon={<Workflow />}
         title="How we work"
         intro="We use a simple, structured approach to help you plan, deliver, and sustain AI upskilling and adoption. Every organisation is different, but our way of working is consistent: understand your context, co-design the program, deliver with your teams, and help you sustain momentum."
         background="alt"
       />
 
-      <Section id="engagement-model" title="Our 4-step engagement model" background="default">
+      <Section
+        id="engagement-model"
+        eyebrow="OUR PROCESS"
+        eyebrowIcon={<Workflow />}
+        title="Our 4-step engagement model"
+        background="default"
+      >
         <div className={styles.processSteps}>
           <ProcessStep
             number={1}
@@ -45,7 +54,13 @@ export default function HowWeWorkPage() {
         </div>
       </Section>
 
-      <Section id="stakeholders" title="Working with your teams" background="alt">
+      <Section
+        id="stakeholders"
+        eyebrow="COLLABORATION"
+        eyebrowIcon={<Users2 />}
+        title="Working with your teams"
+        background="alt"
+      >
         <div className={styles.stakeholdersContent}>
           <p>AI upskilling and adoption is a team effort. We typically work with a core group of stakeholders to ensure that programs are relevant, responsible, and sustainable.</p>
           <h4>Typical stakeholders we partner with:</h4>
@@ -70,7 +85,14 @@ export default function HowWeWorkPage() {
         </div>
       </Section>
 
-      <Section id="deliverables" title="What we deliver at each stage" intro="The exact deliverables depend on your needs, but below is what a typical engagement might include." background="default">
+      <Section
+        id="deliverables"
+        eyebrow="WHAT YOU GET"
+        eyebrowIcon={<Package />}
+        title="What we deliver at each stage"
+        intro="The exact deliverables depend on your needs, but below is what a typical engagement might include."
+        background="dark"
+      >
         <div className={styles.deliverablesGrid}>
           <div className={styles.stage}>
             <h3>Stage 1: Understand & Align</h3>
@@ -115,7 +137,13 @@ export default function HowWeWorkPage() {
         </div>
       </Section>
 
-      <Section id="measurement" title="Readiness, feedback, and measurement" background="alt">
+      <Section
+        id="measurement"
+        eyebrow="MEASURING SUCCESS"
+        eyebrowIcon={<BarChart3 />}
+        title="Readiness, feedback, and measurement"
+        background="alt"
+      >
         <div className={styles.measurementContent}>
           <p>We work with you to define what "success" looks like for your AI upskilling and adoption initiatives, and we use simple mechanisms to gather feedback and track progress.</p>
           <div className={styles.measurementGrid}>

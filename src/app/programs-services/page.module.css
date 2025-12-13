@@ -18,7 +18,7 @@
 
 .keyPoints li::before {
   content: "✓";
-  color: var(--color-accent);
+  color: var(--color-black);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -70,8 +70,19 @@
 
 .detailGrid h4 {
   font-size: 18px;
-  color: var(--color-accent);
+  color: var(--color-black);
+  font-weight: 600;
   margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.01em;
+}
+
+.detailGrid h4::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--gradient-primary);
+  margin-top: 8px;
 }
 
 .detailGrid ul {
@@ -82,6 +93,27 @@
 
 .detailGrid li {
   margin-bottom: var(--spacing-xs);
+}
+
+/* Styles for pillarDetail within dark sections */
+.pillarDetailDark .description {
+  color: var(--color-grey-300);
+}
+
+.pillarDetailDark .detailGrid h4 {
+  color: var(--color-white);
+}
+
+.pillarDetailDark .detailGrid h4::after {
+  background: var(--gradient-text-light);
+}
+
+.pillarDetailDark .detailGrid ul {
+  color: var(--color-grey-300);
+}
+
+.pillarDetailDark .detailGrid p {
+  color: var(--color-grey-300);
 }
 
 .advisoryContent {

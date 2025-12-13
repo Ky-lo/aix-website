@@ -26,7 +26,7 @@ export default function Footer() {
               className={styles.contactLink}
             >
               <Linkedin size={18} />
-              <span>LinkedIn</span>
+              <span>linkedin.com/in/yamseng</span>
             </a>
           </div>
         </div>

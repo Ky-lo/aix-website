@@ -25,7 +25,7 @@
 
 .scenarios li::before {
   content: "✓";
-  color: var(--color-accent);
+  color: var(--color-black);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -52,9 +52,9 @@
 }
 
 .contactMethod:hover {
-  background-color: var(--color-accent);
+  background: var(--gradient-primary);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
   opacity: 1;
 }

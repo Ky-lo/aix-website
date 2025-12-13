@@ -24,9 +24,10 @@ export interface CardProps {
 export interface SectionProps {
   id?: string;
   eyebrow?: string;
+  eyebrowIcon?: React.ReactNode;
   title?: string;
   intro?: string;
-  background?: 'default' | 'alt';
+  background?: 'default' | 'alt' | 'dark';
   children?: React.ReactNode;
   className?: string;
 }
