@@ -155,15 +155,7 @@ ${formData.source ? `How did you hear about us?\n${formData.source}` : ''}
       />
 
       <FormField
-        label="Country / Region"
-        name="country"
-        type="text"
-        value={formData.country}
-        onChange={handleChange}
-      />
-
-      <FormField
-        label="What would you like to discuss?"
+        label="What help do you need?"
         name="message"
         type="textarea"
         required
@@ -171,14 +163,6 @@ ${formData.source ? `How did you hear about us?\n${formData.source}` : ''}
         value={formData.message}
         onChange={handleChange}
         error={errors.message}
-      />
-
-      <FormField
-        label="How did you hear about AI Democratix?"
-        name="source"
-        type="text"
-        value={formData.source}
-        onChange={handleChange}
       />
 
       <p className={styles.privacy}>We will use your details only to respond to your enquiry.</p>
