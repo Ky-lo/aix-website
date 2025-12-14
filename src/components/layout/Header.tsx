@@ -9,13 +9,13 @@ import styles from './Header.module.css';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
   const pathname = usePathname();
 
   useEffect(() => {
     // Get initial theme from localStorage or default to light
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const initialTheme = savedTheme || 'light';
+    const initialTheme = savedTheme || 'dark';
     setTheme(initialTheme);
 
     // Apply theme to document

@@ -9,7 +9,7 @@ export default function Hero() {
           <p className={styles.eyebrow}>AI Upskilling & Adoption for Enterprise</p>
           <h1 className={styles.headline}>Making AI Real</h1>
           <p className={styles.subheadline}>
-            Structured programs that build AI fluency and sustainable adoption.
+            We design structured, tailored programs that help employees understand, apply, and embed AI into their daily work.
             <br />
             <span className={styles.highlight}>A Microsoft partner</span> for Copilot Adoption.
           </p>

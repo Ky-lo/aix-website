@@ -21,7 +21,7 @@ export default function Home() {
         eyebrow="OUR SERVICES"
         eyebrowIcon={<Sparkles />}
         title="What we do"
-        intro="Structured programs that build AI fluency and sustainable adoption."
+        intro="Partner with you to design programs that build AI fluency and drive sustainable adoption."
         background="alt"
         className="reveal"
       >
@@ -58,7 +58,7 @@ export default function Home() {
         eyebrow="OUR BUSINESS PARTNERS"
         eyebrowIcon={<Users2 />}
         title="Who we help"
-        intro="Enterprise teams turning AI into everyday practice."
+        intro="Teams responsible for driving AI upskilling and adoption within the organization."
         background="default"
         className="reveal"
       >
@@ -85,7 +85,7 @@ export default function Home() {
         eyebrowIcon={<Target />}
         title="How we work"
         intro="Tailored engagements with a consistent, structured approach."
-        background="alt"
+        background="default"
         className="reveal"
       >
         <div className={styles.timelineLayout}>
@@ -125,8 +125,8 @@ export default function Home() {
         id="clients-outcomes"
         eyebrow="PROVEN RESULTS"
         eyebrowIcon={<TrendingUp />}
-        title="Clients & outcomes"
-        background="default"
+        title="Measurable outcomes"
+        background="alt"
         className="reveal"
       >
         <div className={styles.outcomesTeaser}>
@@ -137,12 +137,12 @@ export default function Home() {
             <div className={styles.stat}>
               <p className={styles.statValue}>{'>'}10k</p>
               <p className={styles.statLabel}>
-                corporate users trained in 2025
+                users trained acorss various programs in 2025
               </p>
             </div>
             <div className={styles.stat}>
               <p className={styles.statValue}>4.6/5</p>
-              <p className={styles.statLabel}>overall satisfaction across all sessions</p>
+              <p className={styles.statLabel}>overall satisfaction rating across all sessions</p>
             </div>
             <div className={styles.stat}>
               <p className={styles.statValue}>91.4%</p>
