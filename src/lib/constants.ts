@@ -9,10 +9,9 @@ export const SITE_CONFIG = {
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about/', label: 'About' },
-  { href: '/programs-services/', label: 'Programs & Services' },
-  { href: '/how-we-work/', label: 'How We Work' },
-  { href: '/clients-outcomes/', label: 'Clients & Outcomes' },
-  { href: '/contact/', label: 'Contact Us' },
+  { href: '/programs-services/', label: 'Programs' },
+  { href: '/clients-outcomes/', label: 'Clients' },
+  { href: '/contact/', label: 'Contact' },
 ];
 
 export const FOUNDER = {

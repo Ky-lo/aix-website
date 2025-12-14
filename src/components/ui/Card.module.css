@@ -25,8 +25,8 @@
 
 .hoverable:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg), var(--shadow-gradient-sm);
-  border-color: var(--color-grey-700);
+  box-shadow: var(--shadow-lg), var(--shadow-cyan);
+  border-color: var(--border-accent);
 }
 
 .hoverable:hover::before {
@@ -83,7 +83,7 @@
 
 .bullets li::before {
   content: "•";
-  color: var(--color-black);
+  color: var(--accent-primary);
   font-weight: bold;
   font-size: 1.2em;
   position: absolute;

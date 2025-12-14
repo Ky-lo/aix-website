@@ -16,7 +16,7 @@ export default function Footer() {
 
           <div className={styles.contact}>
             <a href={`mailto:${SITE_CONFIG.email}`} className={styles.contactLink}>
-              <Mail size={18} />
+              <Mail size={16} />
               <span>{SITE_CONFIG.email}</span>
             </a>
             <a
@@ -25,14 +25,14 @@ export default function Footer() {
               rel="noopener noreferrer"
               className={styles.contactLink}
             >
-              <Linkedin size={18} />
+              <Linkedin size={16} />
               <span>linkedin.com/in/yamseng</span>
             </a>
           </div>
-        </div>
 
-        <div className={styles.copyright}>
-          <p>© {currentYear} {SITE_CONFIG.name}. All rights reserved.</p>
+          <div className={styles.copyright}>
+            <p>© {currentYear} {SITE_CONFIG.name}. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>

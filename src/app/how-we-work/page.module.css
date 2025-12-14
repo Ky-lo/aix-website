@@ -73,7 +73,7 @@
   padding: var(--spacing-lg);
   background-color: var(--color-bg-alt);
   border-radius: var(--border-radius);
-  border-left: 4px solid var(--color-black);
+  border-left: 4px solid var(--border-accent);
   transition: all var(--transition-slow);
 }
 
@@ -131,7 +131,7 @@
 }
 
 .measurementGrid h4 {
-  color: var(--color-black);
+  color: var(--text-primary);
   font-size: 18px;
   font-weight: 600;
   margin-bottom: var(--spacing-sm);

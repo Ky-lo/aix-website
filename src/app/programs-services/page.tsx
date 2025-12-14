@@ -21,13 +21,6 @@ export default function ProgramsServicesPage() {
         intro="We designs structured AI upskilling and adoption programs that fit your organisation – your roles, your workflows, and your level of AI readiness. We focus on helping your people use AI confidently in the tools they already work with, especially Microsoft 365 Copilot."
         background="alt"
       >
-        <div className={styles.keyPoints}>
-          <ul>
-            <li>AI Upskilling & AI Fluency programs</li>
-            <li>Microsoft Copilot onboarding and usage journeys</li>
-            <li>AI adoption and champions support</li>
-          </ul>
-        </div>
       </Section>
 
       <Section

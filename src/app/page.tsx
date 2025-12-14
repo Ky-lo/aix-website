@@ -22,7 +22,7 @@ export default function Home() {
         eyebrowIcon={<Sparkles />}
         title="What we do"
         intro="Structured programs that build AI fluency and sustainable adoption."
-        background="default"
+        background="alt"
         className="reveal"
       >
         <div className={styles.whatWeDoLayout}>
@@ -32,13 +32,13 @@ export default function Home() {
             <p>Foundational and role-relevant learning paths that build confidence using AI tools in everyday tasks. Awareness sessions, hands-on practice, and practical habits over theory.</p>
           </div>
 
-          <div className={`${styles.pillar} ${styles.pillarEmphasized}`}>
+          <div className={styles.pillar}>
             <span className={styles.pillarNumber}>02</span>
             <h3>Microsoft Copilot Onboarding</h3>
             <p>Structured onboarding programs that help employees move beyond demos into meaningful, repeatable usage of Microsoft Copilot. Feature understanding in real workflows, tailored prompting practices, and responsible usage guidance.</p>
           </div>
 
-          <div className={`${styles.pillar} ${styles.pillarEmphasized}`}>
+          <div className={styles.pillar}>
             <span className={styles.pillarNumber}>03</span>
             <h3>AI Adoption & Champions Programs</h3>
             <p>Support structures that help organisations move from early pilots to sustained, organisation-wide adoption. Champions enablement, office hours and coaching, and continuous improvement feedback loops.</p>
@@ -59,19 +59,19 @@ export default function Home() {
         eyebrowIcon={<Users2 />}
         title="Who we help"
         intro="Enterprise teams turning AI into everyday practice."
-        background="alt"
+        background="default"
         className="reveal"
       >
         <div className={styles.whoWeHelpLayout}>
-          <div className={`${styles.helpBlock} ${styles.helpBlock1}`}>
+          <div className={styles.helpBlock}>
             <h3>HR & Learning Development</h3>
             <p>Design AI upskilling journeys, integrate into existing programs, build workforce readiness.</p>
           </div>
-          <div className={`${styles.helpBlock} ${styles.helpBlock2}`}>
+          <div className={styles.helpBlock}>
             <h3>Digital Transformation & IT</h3>
             <p>Turn AI investments into real usage, support governance with practical training, align with business priorities.</p>
           </div>
-          <div className={`${styles.helpBlock} ${styles.helpBlock3}`}>
+          <div className={styles.helpBlock}>
             <h3>Business & Functional Leaders</h3>
             <p>Discover practical AI use cases, encourage experimentation, build tangible adoption stories.</p>
           </div>
@@ -85,7 +85,7 @@ export default function Home() {
         eyebrowIcon={<Target />}
         title="How we work"
         intro="Tailored engagements with a consistent, structured approach."
-        background="default"
+        background="alt"
         className="reveal"
       >
         <div className={styles.timelineLayout}>
@@ -126,7 +126,7 @@ export default function Home() {
         eyebrow="PROVEN RESULTS"
         eyebrowIcon={<TrendingUp />}
         title="Clients & outcomes"
-        background="alt"
+        background="default"
         className="reveal"
       >
         <div className={styles.outcomesTeaser}>

@@ -11,7 +11,7 @@
 }
 
 .required {
-  color: var(--color-grey-900);
+  color: var(--accent-primary);
 }
 
 .input {
@@ -28,8 +28,8 @@
 
 .input:focus {
   outline: none;
-  border-color: var(--color-black);
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  border-color: var(--border-accent);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
 }
 
 .input::placeholder {

@@ -12,7 +12,6 @@
   margin: 0 auto;
   padding: var(--spacing-md) var(--spacing-md);
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -32,6 +31,7 @@
 .desktopNav {
   display: none;
   gap: var(--spacing-lg);
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -58,6 +58,32 @@
 .navLink.active {
   color: var(--color-black);
   border-bottom-color: var(--color-black);
+}
+
+.themeToggle {
+  background: transparent;
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-left: var(--spacing-md);
+}
+
+.themeToggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-accent);
+  color: var(--accent-primary);
+}
+
+@media (max-width: 767px) {
+  .themeToggle {
+    display: none;
+  }
 }
 
 .mobileMenuButton {

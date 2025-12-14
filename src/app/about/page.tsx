@@ -43,7 +43,7 @@ export default function AboutPage() {
         eyebrowIcon={<Compass />}
         title='Our philosophy: "Making AI Real"'
         intro="We believe that the magic doesn't start with AI – it starts with your people, their questions, and their workflows."
-        background="dark"
+        background="alt"
       >
         <div className={styles.principlesGrid}>
           <div className={styles.principle}>

@@ -50,14 +50,22 @@
 .outcome {
   text-align: center;
   padding: var(--spacing-lg);
-  background-color: var(--color-bg);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
   border-radius: var(--border-radius);
+  transition: all var(--transition-slow);
+}
+
+.outcome:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-cyan);
+  border-color: var(--border-accent);
 }
 
 .outcomeValue {
   font-size: 48px;
   font-weight: 700;
-  background: var(--gradient-text-dark);
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -78,7 +86,7 @@
   padding: var(--spacing-xl);
   background-color: var(--color-bg-alt);
   border-radius: var(--border-radius);
-  border-left: 4px solid var(--color-black);
+  border-left: 4px solid var(--border-accent);
 }
 
 .caseStudy h3 {
@@ -93,7 +101,7 @@
 
 .caseStudySection h4 {
   font-size: 18px;
-  color: var(--color-black);
+  color: var(--text-primary);
   font-weight: 600;
   margin-bottom: var(--spacing-sm);
 }
@@ -127,15 +135,15 @@
   margin-top: var(--spacing-xl);
   padding: var(--spacing-lg);
   background: var(--gradient-primary);
-  color: var(--color-white);
-  border-left: 4px solid var(--color-grey-500);
+  color: var(--color-slate-100);
+  border-left: 4px solid var(--border-accent);
   border-radius: var(--border-radius);
 }
 
 .quote p {
   font-size: 18px;
   font-style: italic;
-  color: var(--color-grey-300);
+  color: var(--color-slate-300);
   margin: 0;
 }
 

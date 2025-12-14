@@ -1,15 +1,42 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { SITE_CONFIG, NAV_LINKS } from '@/lib/constants';
 import styles from './Header.module.css';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'dark'>('light');
   const pathname = usePathname();
+
+  useEffect(() => {
+    // Get initial theme from localStorage or default to dark
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
+    const initialTheme = savedTheme || 'dark';
+    setTheme(initialTheme);
+
+    // Apply theme to document
+    if (initialTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+
+    if (newTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  };
 
   const isActive = (href: string) => {
     if (href === '/') {
@@ -37,6 +64,15 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+
+        {/* Theme Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          className={styles.themeToggle}
+          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+        >
+          {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+        </button>
 
         {/* Mobile Menu Button */}
         <button

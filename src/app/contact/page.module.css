@@ -25,7 +25,7 @@
 
 .scenarios li::before {
   content: "✓";
-  color: var(--color-black);
+  color: var(--accent-primary);
   font-weight: bold;
   position: absolute;
   left: 0;

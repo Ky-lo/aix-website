@@ -84,17 +84,17 @@
 
 .principle {
   padding: var(--spacing-lg);
-  background-color: var(--color-bg);
+  background-color: var(--bg-secondary);
   border-radius: var(--border-radius);
-  border-left: 4px solid var(--color-black);
+  border-left: 4px solid var(--border-accent);
   transition: all var(--transition-slow);
 }
 
 .principle:hover {
   border-left-width: 6px;
-  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  background: var(--bg-hover);
   transform: translateX(4px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-cyan);
 }
 
 .principle h3 {
