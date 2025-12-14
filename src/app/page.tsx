@@ -25,31 +25,51 @@ export default function Home() {
         background="default"
         className="reveal"
       >
-        <div className={styles.whatWeDoLayout}>
-          <div className={styles.pillar}>
-            <span className={styles.pillarNumber}>01</span>
-            <h3>AI Upskilling & AI Fluency</h3>
-            <p>Foundational and role-relevant learning paths that build confidence using AI tools in everyday tasks. Awareness sessions, hands-on practice, and practical habits over theory.</p>
-          </div>
-
-          <div className={styles.pillar}>
-            <span className={styles.pillarNumber}>02</span>
-            <h3>Microsoft Copilot Onboarding</h3>
-            <p>Structured onboarding programs that help employees move beyond demos into meaningful, repeatable usage of Microsoft Copilot. Feature understanding in real workflows, tailored prompting practices, and responsible usage guidance.</p>
-          </div>
-
-          <div className={styles.pillar}>
-            <span className={styles.pillarNumber}>03</span>
-            <h3>AI Adoption & Champions Programs</h3>
-            <p>Support structures that help organisations move from early pilots to sustained, organisation-wide adoption. Champions enablement, office hours and coaching, and continuous improvement feedback loops.</p>
-          </div>
-
-          <div className={styles.pillar}>
-            <span className={styles.pillarNumber}>04</span>
-            <h3>Advisory on AI Upskilling Strategy</h3>
-            <p>Partnership with your HR, L&D, and transformation teams to shape AI learning and adoption roadmaps. Co-design learning journeys, integrate with existing programs, and align stakeholders around a clear approach.</p>
-          </div>
+      <div className={styles.whatWeDoLayout}>
+        <div className={styles.pillar}>
+          <span className={styles.pillarNumber}>01</span>
+          <h3>AI Upskilling & AI Fluency</h3>
+          <ul>
+            <li>What AI is and how it supports work</li>
+            <li>Using AI in everyday tasks</li>
+            <li>Practical examples from real work scenarios</li>
+            <li>Learning through application, not theory</li>
+          </ul>
         </div>
+
+        <div className={styles.pillar}>
+          <span className={styles.pillarNumber}>02</span>
+          <h3>Microsoft Copilot Onboarding</h3>
+          <ul>
+            <li>Getting started with Microsoft Copilot</li>
+            <li>Applying Copilot in daily work</li>
+            <li>Using Copilot within real workflows</li>
+            <li>Responsible and secure usage</li>
+          </ul>
+        </div>
+
+        <div className={styles.pillar}>
+          <span className={styles.pillarNumber}>03</span>
+          <h3>AI Adoption & Champions Programs</h3>
+          <ul>
+            <li>Supporting sustained AI usage</li>
+            <li>Enabling internal AI champions</li>
+            <li>Ongoing guidance and coaching</li>
+            <li>Continuous improvement through feedback</li>
+          </ul>
+        </div>
+
+        <div className={styles.pillar}>
+          <span className={styles.pillarNumber}>04</span>
+          <h3>Advisory on AI Upskilling Strategy</h3>
+          <ul>
+            <li>Partnering with HR, L&amp;D, and transformation teams</li>
+            <li>Designing role-based AI learning plans</li>
+            <li>Integrating AI into existing training programs</li>
+            <li>Aligning stakeholders on a clear approach</li>
+          </ul>
+        </div>
+      </div>
       </Section>
 
       {/* Who We Help */}
@@ -65,15 +85,27 @@ export default function Home() {
         <div className={styles.whoWeHelpLayout}>
           <div className={styles.helpBlock}>
             <h3>HR & Learning Development</h3>
-            <p>Design AI upskilling journeys, integrate into existing programs, build workforce readiness.</p>
+            <ul>
+              <li>Design AI upskilling journeys</li>
+              <li>Integrate into existing programs</li>
+              <li>Build workforce readiness</li>
+            </ul>
           </div>
           <div className={styles.helpBlock}>
             <h3>Digital Transformation & IT</h3>
-            <p>Turn AI investments into real usage, support governance with practical training, align with business priorities.</p>
+            <ul>
+              <li>Turn AI investments into real usage</li>
+              <li>Support governance with practical training</li>
+              <li>Align with business priorities</li>
+            </ul>
           </div>
           <div className={styles.helpBlock}>
             <h3>Business & Functional Leaders</h3>
-            <p>Discover practical AI use cases, encourage experimentation, build tangible adoption stories.</p>
+            <ul>
+              <li>Discover practical AI use cases</li>
+              <li>Encourage experimentation</li>
+              <li>Build tangible adoption stories</li>
+            </ul>
           </div>
         </div>
       </Section>

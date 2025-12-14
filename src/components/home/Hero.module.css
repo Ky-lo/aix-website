@@ -95,10 +95,9 @@
 .pulseIcon {
   display: inline-block;
   width: 24px;
-  height: 16px;
+  height: 24px;
   color: var(--color-cyan-400);
   filter: drop-shadow(0 0 8px var(--color-cyan-400));
-  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
