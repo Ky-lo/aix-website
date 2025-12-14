@@ -84,7 +84,7 @@ export default function ProgramsServicesPage() {
             If you are planning or running AI upskilling or Copilot adoption initiatives, we can help you design and deliver a structured program that fits your organisation.
           </p>
           <div className={styles.ctaButton}>
-            <Button href="/contact/" variant="primary" size="large">
+            <Button href="/contact/" variant="primary" size="large" className={styles.pillButton}>
               Contact Us
             </Button>
           </div>

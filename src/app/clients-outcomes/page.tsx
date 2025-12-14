@@ -64,7 +64,7 @@ export default function ClientsOutcomesPage() {
             If you would like to explore how similar programs and outcomes could look in your organisation, let's have a conversation.
           </p>
           <div className={styles.ctaButton}>
-            <Button href="/contact/" variant="primary" size="large">
+            <Button href="/contact/" variant="primary" size="large" className={styles.pillButton}>
               Contact Us
             </Button>
           </div>

@@ -74,12 +74,18 @@
 .pillar {
   padding: var(--spacing-2xl) var(--spacing-xl);
   border: 1px solid var(--border-primary);
+  border-left: 4px solid var(--border-accent);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
   position: relative;
-  transition: background 0.3s ease;
+  transition: all var(--transition-slow);
 }
 
 .pillar:hover {
-  background: var(--gradient-subtle);
+  border-left-width: 6px;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-cyan);
+  background: var(--bg-hover);
 }
 
 .pillarNumber {
@@ -292,6 +298,18 @@
 .teaserCta {
   display: flex;
   justify-content: center;
+}
+
+.pillButton {
+  border-radius: 50px !important;
+}
+
+.pillButton::before {
+  border-radius: 50px !important;
+}
+
+.pillButton::after {
+  border-radius: 50px !important;
 }
 
 .founderNote {

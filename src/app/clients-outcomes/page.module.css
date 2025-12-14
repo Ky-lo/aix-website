@@ -198,3 +198,15 @@
   display: flex;
   justify-content: center;
 }
+
+.pillButton {
+  border-radius: 50px !important;
+}
+
+.pillButton::before {
+  border-radius: 50px !important;
+}
+
+.pillButton::after {
+  border-radius: 50px !important;
+}

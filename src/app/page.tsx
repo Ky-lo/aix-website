@@ -22,7 +22,7 @@ export default function Home() {
         eyebrowIcon={<Sparkles />}
         title="What we do"
         intro="Partner with you to design programs that build AI fluency and drive sustainable adoption."
-        background="alt"
+        background="default"
         className="reveal"
       >
         <div className={styles.whatWeDoLayout}>
@@ -59,7 +59,7 @@ export default function Home() {
         eyebrowIcon={<Users2 />}
         title="Who we help"
         intro="Teams responsible for driving AI upskilling and adoption within the organization."
-        background="default"
+        background="alt"
         className="reveal"
       >
         <div className={styles.whoWeHelpLayout}>
@@ -152,8 +152,8 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.teaserCta}>
-            <Button href="/clients-outcomes/" variant="secondary" size="medium">
-              View Clients & Outcomes
+            <Button href="/clients-outcomes/" variant="secondary" size="medium" className={styles.pillButton}>
+              View Programs
             </Button>
           </div>
         </div>

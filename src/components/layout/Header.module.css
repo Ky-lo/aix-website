@@ -51,13 +51,13 @@
 }
 
 .navLink:hover {
-  color: var(--color-black);
+  color: var(--accent-primary);
   opacity: 1;
 }
 
 .navLink.active {
-  color: var(--color-black);
-  border-bottom-color: var(--color-black);
+  color: var(--accent-primary);
+  border-bottom-color: var(--accent-primary);
 }
 
 .themeToggle {
@@ -129,9 +129,9 @@
 }
 
 .mobileNavLink:hover {
-  color: var(--color-black);
-  border-left-color: var(--color-grey-900);
-  background: linear-gradient(90deg, #f5f5f5 0%, transparent 100%);
+  color: var(--accent-primary);
+  border-left-color: var(--accent-primary);
+  background: rgba(34, 211, 238, 0.05);
   opacity: 1;
 }
 

@@ -1,11 +1,74 @@
 .hero {
-  background: var(--color-white);
+  background: var(--color-obsidian-950);
+  background-image: radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.15) 0%, rgba(11, 13, 16, 0) 70%);
   min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-3xl) 0;
+  overflow: hidden;
+}
+
+/* Animated wave background */
+.waveBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.wave1 {
+  fill: rgba(34, 211, 238, 0.015);
+  animation: waveFlow1 2.5s ease-in-out infinite;
+}
+
+.wave2 {
+  fill: rgba(34, 211, 238, 0.025);
+  animation: waveFlow2 5s ease-in-out infinite reverse;
+}
+
+.wave3 {
+  fill: rgba(34, 211, 238, 0.02);
+  animation: waveFlow3 3s ease-in-out infinite;
+}
+
+@keyframes waveFlow1 {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25px) translateY(-10px);
+  }
+}
+
+@keyframes waveFlow2 {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(30px) translateY(15px);
+  }
+}
+
+@keyframes waveFlow3 {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-20px) translateY(10px);
+  }
 }
 
 .container {
@@ -14,11 +77,41 @@
   text-align: center;
   padding: var(--spacing-2xl);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .content {
   /* All content centered, no two-column layout */
+}
+
+/* Eyebrow with pulse/scope icon */
+.eyebrowWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pulseIcon {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  color: var(--color-cyan-400);
+  filter: drop-shadow(0 0 8px var(--color-cyan-400));
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px var(--color-cyan-400));
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 16px var(--color-cyan-400));
+  }
 }
 
 .eyebrow {
@@ -26,7 +119,7 @@
   letter-spacing: 0.2em;
   font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: var(--spacing-md);
+  margin: 0;
   font-weight: 700;
 }
 
@@ -35,9 +128,10 @@
   font-size: 72px;
   font-weight: 300;
   letter-spacing: -0.04em;
-  color: var(--color-black);
+  color: #FFFFFF;
   margin-bottom: var(--spacing-lg);
   line-height: 1.1;
+  text-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -68,14 +162,18 @@
   .container {
     padding: var(--spacing-md);
   }
+
+  .subheadline {
+    font-size: 16px;
+  }
 }
 
 .subheadline {
-  font-size: 18px;
-  color: var(--color-grey-600);
-  max-width: 600px;
-  margin: 0 auto var(--spacing-xl);
-  line-height: 1.6;
+  font-size: 20px;
+  color: var(--color-slate-200);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  line-height: 1.7;
 }
 
 .highlight {
@@ -83,6 +181,73 @@
   font-weight: 700;
 }
 
-.cta {
-  /* Centered by default */
+.ctaGroup {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.ctaGroup > * {
+  min-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .ctaGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaGroup > * {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+.pillButton {
+  border-radius: 50px !important;
+}
+
+.pillButton::before {
+  border-radius: 50px !important;
+}
+
+.pillButton::after {
+  border-radius: 50px !important;
+}
+
+/* Secondary button styling for hero section */
+.secondaryButton {
+  color: #E2E8F0 !important;
+  border-color: rgba(226, 232, 240, 0.5) !important;
+  border-width: 1px !important;
+  border-radius: 50px !important;
+}
+
+.secondaryButton:hover {
+  background: var(--accent-primary) !important;
+  color: #0B0D10 !important;
+  border-color: transparent !important;
+}
+
+.partnerBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.copilotIcon {
+  width: 20px;
+  height: auto;
+  opacity: 0.7;
+  filter: grayscale(100%) brightness(1.2);
+}
+
+.partnerText {
+  font-size: 16px;
+  color: #A8A8A8;
+  font-weight: 400;
 }

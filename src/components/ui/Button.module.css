@@ -116,3 +116,16 @@
   padding: var(--spacing-md) var(--spacing-xl);
   font-size: 18px;
 }
+
+/* Pill shape modifier */
+.pill {
+  border-radius: 50px;
+}
+
+.pill::before {
+  border-radius: 50px;
+}
+
+.pill::after {
+  border-radius: 50px;
+}
