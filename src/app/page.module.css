@@ -36,10 +36,16 @@
   color: var(--text-secondary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .whoWeHelpLayout {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .helpBlock {
+    padding: var(--spacing-lg);
   }
 }
 
