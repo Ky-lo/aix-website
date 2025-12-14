@@ -136,7 +136,7 @@
 }
 
 .mobileNavLink.active {
-  color: var(--color-black);
-  border-left-color: var(--color-black);
-  background: linear-gradient(90deg, #e5e5e5 0%, transparent 100%);
+  color: var(--accent-primary);
+  border-left-color: var(--accent-primary);
+  background: rgba(34, 211, 238, 0.1);
 }
