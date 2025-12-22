@@ -30,7 +30,7 @@ export default function ClientsOutcomesPage() {
         eyebrow="KEY METRICS"
         eyebrowIcon={<TrendingUp />}
         title="Outcomes at a glance"
-        background="default"
+        background="alt"
       >
         <div className={styles.outcomesGrid}>
           <div className={styles.outcome}>
