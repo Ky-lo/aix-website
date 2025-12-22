@@ -1,12 +1,13 @@
 .hero {
   background: var(--color-obsidian-950);
   background-image: radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.15) 0%, rgba(11, 13, 16, 0) 70%);
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
-  padding: var(--spacing-3xl) 0;
+  padding: var(--spacing-3xl) 0 0 0;
   overflow: hidden;
 }
 
@@ -78,6 +79,7 @@
   padding: var(--spacing-2xl);
   position: relative;
   z-index: 2;
+  flex: 0 0 auto;
 }
 
 .content {
@@ -148,6 +150,31 @@
   }
 }
 
+/* Hero Marquee */
+.heroMarquee {
+  margin-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.heroMarquee :global(.marqueeContainer) {
+  padding: var(--spacing-xs) 0;
+}
+
+.heroMarquee :global(.logoWrapper) {
+  height: 50px;
+  min-width: 100px;
+}
+
+.heroMarquee :global(.logo) {
+  max-width: 100px;
+  max-height: 40px;
+}
+
+.heroMarquee :global(.marqueeTrack) {
+  animation: scroll 60s linear infinite;
+}
+
 @media (max-width: 768px) and (orientation: landscape) {
   .hero {
     min-height: auto;
@@ -164,6 +191,18 @@
 
   .subheadline {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroMarquee :global(.logoWrapper) {
+    height: 45px;
+    min-width: 90px;
+  }
+
+  .heroMarquee :global(.logo) {
+    max-width: 90px;
+    max-height: 35px;
   }
 }
 
@@ -185,7 +224,7 @@
   gap: var(--spacing-md);
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
 }
 
 .ctaGroup > * {
@@ -235,7 +274,8 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-sm);
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .copilotIcon {

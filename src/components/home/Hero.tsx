@@ -1,4 +1,5 @@
 import Button from '@/components/ui/Button';
+import LogoMarquee from '@/components/ui/LogoMarquee';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -53,6 +54,11 @@ export default function Hero() {
             </span>
           </div>
         </div>
+      </div>
+
+      {/* Client Logos Marquee */}
+      <div className={styles.heroMarquee}>
+        <LogoMarquee />
       </div>
     </section>
   );

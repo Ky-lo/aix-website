@@ -1,8 +1,9 @@
 .marqueeContainer {
   width: 100%;
   overflow: hidden;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-sm) 0;
   position: relative;
+  background: linear-gradient(to bottom, #E8E8E8, #F5F5F5);
 }
 
 .marqueeTrack {
@@ -32,10 +33,7 @@
   justify-content: center;
   height: 80px;
   min-width: 160px;
-  padding: var(--spacing-sm);
-  background-color: #ffffff;
-  border-radius: 8px;
-  border: 1px solid var(--color-border);
+  padding: var(--spacing-xs);
 }
 
 .logo {

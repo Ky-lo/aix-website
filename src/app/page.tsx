@@ -184,7 +184,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.teaserCta}>
-            <Button href="/clients-outcomes/" variant="secondary" size="medium" className={styles.pillButton}>
+            <Button href="/programs-services/" variant="secondary" size="medium" className={styles.pillButton}>
               View Programs
             </Button>
           </div>

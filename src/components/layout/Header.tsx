@@ -9,13 +9,29 @@ import styles from './Header.module.css';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    // Initial state: dark for desktop, light for mobile
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768 ? 'light' : 'dark';
+    }
+    return 'dark'; // SSR fallback
+  });
   const pathname = usePathname();
 
   useEffect(() => {
-    // Get initial theme from localStorage or default to light
+    // Get initial theme from localStorage or default based on device type
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const initialTheme = savedTheme || 'dark';
+
+    let initialTheme: 'light' | 'dark';
+    if (savedTheme) {
+      // Use saved preference if it exists
+      initialTheme = savedTheme;
+    } else {
+      // Default: dark for desktop (>= 768px), light for mobile
+      const isMobile = window.innerWidth < 768;
+      initialTheme = isMobile ? 'light' : 'dark';
+    }
+
     setTheme(initialTheme);
 
     // Apply theme to document
