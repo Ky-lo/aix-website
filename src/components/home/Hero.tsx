@@ -1,5 +1,6 @@
 import Button from '@/components/ui/Button';
 import LogoMarquee from '@/components/ui/LogoMarquee';
+import { getAssetPath } from '@/lib/utils';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -48,7 +49,7 @@ export default function Hero() {
           </div>
 
           <div className={styles.partnerBadge}>
-            <img src="/images/hero/Copilot.svg" alt="Microsoft Copilot" className={styles.copilotIcon} />
+            <img src={getAssetPath('/images/hero/Copilot.svg')} alt="Microsoft Copilot" className={styles.copilotIcon} />
             <span className={styles.partnerText}>
               Microsoft partner for Copilot Adoption.
             </span>

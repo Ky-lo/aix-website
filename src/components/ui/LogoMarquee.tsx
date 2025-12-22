@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { getAssetPath } from '@/lib/utils';
 import styles from './LogoMarquee.module.css';
 
 const clients = [
@@ -39,7 +40,7 @@ export default function LogoMarquee() {
         {clients.map((client, index) => (
           <div key={`logo-1-${index}`} className={styles.logoWrapper}>
             <img
-              src={`/images/clients/${client}`}
+              src={getAssetPath(`/images/clients/${client}`)}
               alt={`Client logo ${index + 1}`}
               className={styles.logo}
             />
@@ -49,7 +50,7 @@ export default function LogoMarquee() {
         {clients.map((client, index) => (
           <div key={`logo-2-${index}`} className={styles.logoWrapper}>
             <img
-              src={`/images/clients/${client}`}
+              src={getAssetPath(`/images/clients/${client}`)}
               alt={`Client logo ${index + 1}`}
               className={styles.logo}
             />
