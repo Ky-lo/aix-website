@@ -20,7 +20,7 @@ export default function ClientsOutcomesPage() {
         eyebrow="OUR CLIENTS"
         eyebrowIcon={<Building2 />}
         title="Clients we work with"
-        background="alt"
+        background="default"
       >
         <LogoMarquee />
       </Section>
